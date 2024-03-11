@@ -1,7 +1,7 @@
 # Workshop d'Intelligence Artificielle - Exercises
 <img src="assets/ia_ban3.jpg" alt="Workshop IA">
 
-Ce projet propose deux exercices pour explorer différents aspects de l'intelligence artificielle: la détection de spam dans les e-mails et la prédiction de la météo à l'aide d'un réseau de neurones. Il vous apprendra à découvrir et maîtriser les différents outils communément utilisé dans le secteur de l'IA.
+Ce projet propose plusieurs exercices pour explorer différents aspects de l'intelligence artificielle: la base, la détection de spam dans les e-mails et la prédiction de la météo à l'aide d'un réseau de neurones. Il vous apprendra à découvrir et maîtriser les différents outils communément utilisé dans le secteur de l'IA.
 
 
 ## Préparation de l'environnement
@@ -10,27 +10,35 @@ Avant de commencer les exercices, assurez-vous de suivre les instructions dans l
 
 **L'environnement venv** permet de ne pas installer ses librairies à son root mais plutôt dans un dossier/environnement qui sera propre au projet. Si une utilisation de librairie vient à déteriorer quelque chose ce sera seulement votre environnement que vous pourrez supprimer et re-créer librement. C'est ce que l'on appelle un package manager qui est semblable à `npm`.
 
-**Jupyter Notebook (.ipynb)** est une plateforme de développement interactive qui offre la possibilité d'éxecuter le code brique par brique. Ainsi les éléments pouvant prendre plus de temps ne sont pas nécéssairement re-éxécuter pour tester une seule partie du code ! C'est compatible Python et Markdown.
+**Jupyter Notebook (.ipynb)** est une plateforme de développement interactive qui offre la possibilité d'éxecuter le code brique par brique. Ainsi les éléments pouvant prendre plus de temps ne sont pas nécéssairement re-éxécuter pour tester une seule partie du code ! C'est compatible Python et Markdown. Tous les exercises seront à réaliser à l'aide des notebooks où seulement certaines parties du code seront à compléter.
 
 **Les .csv** c'est l'extension des datasets (=ensemble de données pour réaliser des entraînements) les données sont séparés avec une virgule comme son nom l'indique; **Comma-separated values**. Mais peut aussi avoir n'importe quel symbole comme séparateur. Ces données sont compactes mais simple d'utilisations avec les nombreuses librairies comme Pandas.
 
-**Docker** ne sera pas utilisé dans ces projets car il mériterait un workshop à part entier mais c'est un environnement de développement géré avec des Conteneurs, volumes et images. Il est très utilisé dans le domaine de l'IA pour éviter de déteriorer les machines utilisées lors de l'entraînement des modèles. 
+## Exercise 1: Perceptron
+<img src="assets/spam_ham.png" alt="Spam Classification" style="width:550px;height:250px;">
 
+Pour commencer vous allez devoir réaliser un perceptron. C'est la base d'un réseau de neurones. Un perceptron est un modèle mathématique inspiré du fonctionnement du cerveau humain. Il prend des données en entrée (comme la couleur et la forme des fruits) et les traite pour prendre une décision (comme dire s'il s'agit d'une pomme ou d'une banane).
 
-## Exercise 1: Détection de Spam dans les E-mails
+Voici comment cela fonctionne : le perceptron attribue des poids à chaque donnée d'entrée, comme si certaines caractéristiques des fruits étaient plus importantes que d'autres pour décider s'il s'agit d'une pomme ou d'une banane. Ensuite, il combine ces poids avec les données d'entrée et les passe à travers une fonction d'activation.
+
+La fonction d'activation agit comme un seuil: si la combinaison des poids et des données dépasse ce seuil, le perceptron dit que c'est une pomme, sinon il dit que c'est une banane. C'est un peu comme si le robot examinait les caractéristiques des fruits et décidait en fonction de ses expériences passées.
+
+Le perceptron apprend en comparant sa prédiction avec la bonne réponse et en ajustant ses poids en conséquence. Plus il voit de fruits, mieux il devient à les reconnaître.
+
+## Exercise 2: Détection de Spam dans les E-mails
 <img src="assets/spam_ham.png" alt="Spam Classification" style="width:550px;height:250px;">
 
 Dans cet exercice, vous allez construire un système de détection de spam dans les e-mails en utilisant des techniques d'apprentissage automatique. Vous travaillerez avec un ensemble de données d'e-mails étiquetés comme spam ou non-spam (ham). Cet exercise vous aidera à prendre en main les outils comunéments utilisé dans le secteur de l'intelligence artificielle.
 
 **Scénario :** Vous êtes un ingénieur en informatique chargé de développer un système de filtrage de spam pour une entreprise de messagerie. Votre tâche consiste à créer un modèle capable de détecter efficacement les e-mails indésirables et de les bloquer avant qu'ils n'atteignent la boîte de réception des utilisateurs.
 
-## Exercise 2: Prédiction de la Météo avec un Réseau de Neurones (from scratch)
+## Exercise BONUS: Prédiction de la Météo avec un Réseau de Neurones (from scratch)
 
 Dans cet exercice, vous allez implémenter un réseau de neurones à partir de zéro pour prédire la météo en fonction de certaines variables d'entrée. Ce projet vous aidera à comprendre les principes fondamentaux des réseaux de neurones et leur application à des problèmes du monde réel.
 
 **Scénario :** Vous êtes un scientifique des données travaillant pour une entreprise météorologique. Votre objectif est de développer un modèle de prédiction météorologique précis qui peut être utilisé pour informer le public des conditions météorologiques à venir. Vous allez construire un réseau de neurones capable de prendre en compte des variables telles que la température, la pression atmosphérique, l'humidité, etc., pour prédire le temps qu'il fera dans une région donnée à une heure donnée.
 
-Pour cet exercise je pense qu'il est bon de vous mettre au point sur certains aspects des réseaux de neurones:
+Pour ces exercises je pense qu'il est bon de vous mettre au point sur certains aspects des réseaux de neurones:
 
 ### 1. De quoi est composé un réseau de neurones ?
 
@@ -61,4 +69,4 @@ En résumé, une fonction d'activation comme ReLU agit comme un interrupteur dan
 Je vous conseil d'aller voir rapidement [ce site](https://deeplylearning.fr/cours-theoriques-deep-learning/fonction-dactivation/) pour avoir un aperçu des différentes fonctions d'activations, leur comportement et cas d'utilisation.
 
 ---
-En suivant les instructions fournies dans ce README.md et en utilisant les ressources disponibles dans les dossiers, vous serez en mesure de compléter avec succès les deux exercices. Amusez-vous bien et n'hésitez pas à me poser des questions si vous en avez !
+En suivant les instructions fournies dans ce README.md et en utilisant les ressources disponibles dans les dossiers, vous serez en mesure de compléter avec succès les exercices. Amusez-vous bien et n'hésitez pas à me poser des questions si vous en avez !
