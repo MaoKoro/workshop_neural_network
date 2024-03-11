@@ -15,7 +15,7 @@ Avant de commencer les exercices, assurez-vous de suivre les instructions dans l
 **Les .csv** c'est l'extension des datasets (=ensemble de données pour réaliser des entraînements) les données sont séparés avec une virgule comme son nom l'indique; **Comma-separated values**. Mais peut aussi avoir n'importe quel symbole comme séparateur. Ces données sont compactes mais simple d'utilisations avec les nombreuses librairies comme Pandas.
 
 ## Exercise 1: Perceptron
-<img src="assets/spam_ham.png" alt="Spam Classification" style="width:550px;height:250px;">
+<img src="assets/perceptron.png" alt="Neural representation" style="width:550px;height:300px;">
 
 Pour commencer vous allez devoir réaliser un perceptron. C'est la base d'un réseau de neurones. Un perceptron est un modèle mathématique inspiré du fonctionnement du cerveau humain. Il prend des données en entrée (comme la couleur et la forme des fruits) et les traite pour prendre une décision (comme dire s'il s'agit d'une pomme ou d'une banane).
 
